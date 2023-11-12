@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" minHeight="-Infinity" minWidth="-Infinity" prefHeight="364.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.factory_management_system_te.controller.UpdateMaterialWindowFormController">
+   <children>
+      <Label layoutX="60.0" layoutY="14.0" text="Update Raw Material">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="63.0" text="Raw_ID">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="132.0" text="Description">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="200.0" text="Qty">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="232.0" layoutY="203.0" text="Unit Price">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="548.0" layoutY="292.0" onAction="#btnUpdateOnAction" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: yellow;" text="Update">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="364.0" prefWidth="35.0" styleClass="pane_blue" stylesheets="@../style/color.css" />
+      <Label layoutX="277.0" layoutY="56.0" text="Supplier ID">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbSupplierId" layoutX="279.0" layoutY="83.0" onAction="#cmbSupplierIdOnAction" prefHeight="31.0" prefWidth="148.0" />
+      <Label layoutX="474.0" layoutY="56.0" text="Supplier Name">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSupplierName" layoutX="466.0" layoutY="87.0" prefHeight="28.0" prefWidth="148.0">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="292.0" text="Total Price : ">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtTotalPrice" layoutX="150.0" layoutY="286.0" prefHeight="28.0" prefWidth="192.0" textFill="RED">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbRawId" layoutX="61.0" layoutY="85.0" onAction="#cmbRawIdOnAction" prefHeight="31.0" prefWidth="148.0" />
+      <Label fx:id="lblQty" layoutX="69.0" layoutY="222.0" prefHeight="28.0" prefWidth="62.0">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="495.0" layoutY="195.0" text="New Qty">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNewQty" focusTraversable="false" layoutX="495.0" layoutY="221.0" onKeyTyped="#txtnewQtyKeyTypedOnAction" prefHeight="31.0" prefWidth="90.0" />
+      <Label fx:id="lblUnitPrice" layoutX="226.0" layoutY="222.0" prefHeight="28.0" prefWidth="223.0">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDesc" layoutX="60.0" layoutY="154.0" prefHeight="28.0" prefWidth="554.0">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" minHeight="-Infinity" minWidth="-Infinity" prefHeight="389.0" prefWidth="567.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.factory_management_system_te.controller.RawMaterialPreviewWindowFormController">
+   <children>
+      <Label layoutX="60.0" layoutY="14.0" text="Raw Material">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="63.0" text="Raw_ID">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="141.0" text="Description">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="211.0" text="Qty">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="291.0" layoutY="211.0" text="Unit Price">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="447.0" layoutY="323.0" onAction="#btnUpdateOnAction" prefHeight="31.0" prefWidth="82.0" style="-fx-background-color: yellow;" text="Update">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="389.0" prefWidth="35.0" styleClass="pane_blue" stylesheets="@../style/color.css" />
+      <Label fx:id="lblRawId" focusTraversable="false" layoutX="65.0" layoutY="85.0" prefHeight="31.0" prefWidth="261.0" textFill="#3800ff">
+         <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDesc" focusTraversable="false" layoutX="57.0" layoutY="163.0" prefHeight="31.0" prefWidth="484.0" textFill="#3800ff">
+         <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblQty" focusTraversable="false" layoutX="54.0" layoutY="234.0" prefHeight="31.0" prefWidth="200.0" textFill="#3800ff">
+         <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUnitPrice" focusTraversable="false" layoutX="288.0" layoutY="234.0" prefHeight="31.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

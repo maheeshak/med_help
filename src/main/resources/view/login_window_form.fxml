@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" stylesheets="@../style/color.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.factory_management_system_te.controller.LoginWindowFormController">
+   <ImageView fitHeight="89.0" fitWidth="217.0" layoutX="309.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../img/logo.png" />
+   </ImageView>
+   <Label layoutX="312.0" layoutY="152.0" prefHeight="44.0" prefWidth="109.0" text="Sign in" textFill="#000000b1">
+      <font>
+         <Font name="Times New Roman Bold" size="28.0" />
+      </font>
+   </Label>
+   <TextField fx:id="txtOtp" focusTraversable="false" layoutX="309.0" layoutY="333.0" onKeyTyped="#txtOtpOnKeyTyped" prefHeight="31.0" prefWidth="187.0" promptText="OTP" style="-fx-background-radius: 30;">
+      <font>
+         <Font name="Times New Roman" size="16.0" />
+      </font>
+      <styleClass>
+         <String fx:value="border" />
+         <String fx:value="img" />
+      </styleClass>
+   </TextField>
+   <JFXButton fx:id="btnOtp" buttonType="RAISED" disable="true" focusTraversable="false" layoutX="503.0" layoutY="333.0" onAction="#btnOtpOnAction" prefHeight="31.0" prefWidth="59.0" style="-fx-background-radius: 30;" styleClass="div" stylesheets="@../style/color.css" text="OTP" textFill="WHITE">
+      <font>
+         <Font name="Times New Roman Bold" size="14.0" />
+      </font>
+   </JFXButton>
+   <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="387.0" layoutY="386.0" onAction="#btnLoginOnAction" prefHeight="31.0" prefWidth="109.0" style="-fx-background-radius: 30;" styleClass="div" stylesheets="@../style/color.css" text="Login" textFill="WHITE">
+      <font>
+         <Font name="Times New Roman Bold" size="16.0" />
+      </font>
+   </JFXButton>
+   <ImageView fx:id="imgLogo" fitHeight="506.0" fitWidth="314.0" layoutX="-5.0" layoutY="-4.0" pickOnBounds="true">
+      <Image url="@../img/shape.png" />
+   </ImageView>
+   <Label layoutX="323.0" layoutY="446.0" text="Don’t have an account ? ">
+      <font>
+         <Font name="Times New Roman Bold" size="15.0" />
+      </font>
+   </Label>
+   <Label layoutX="482.0" layoutY="446.0" onMouseClicked="#txtSignUpOnMouseClicked" text="Sign up" textFill="RED">
+      <font>
+         <Font name="Times New Roman Bold" size="15.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Label>
+   <PasswordField fx:id="txtPassword" focusTraversable="false" layoutX="300.0" layoutY="251.0" prefHeight="31.0" prefWidth="253.0" promptText="Password" style="-fx-background-radius: 30px;">
+      <styleClass>
+         <String fx:value="border" />
+         <String fx:value="img" />
+      </styleClass>
+      <font>
+         <Font name="Times New Roman" size="16.0" />
+      </font>
+   </PasswordField>
+   <TextField fx:id="txtUserName" focusTraversable="false" layoutX="300.0" layoutY="207.0" prefHeight="33.0" prefWidth="253.0" promptText="Username" style="-fx-background-radius: 30;">
+      <font>
+         <Font name="Times New Roman" size="16.0" />
+      </font>
+      <styleClass>
+         <String fx:value="border" />
+         <String fx:value="img" />
+      </styleClass>
+   </TextField>
+   <TextField fx:id="txtEmail" focusTraversable="false" layoutX="300.0" layoutY="292.0" onKeyTyped="#txtEmailOnKeyTyped" prefHeight="33.0" prefWidth="253.0" promptText="Email" style="-fx-background-radius: 30;">
+      <font>
+         <Font name="Times New Roman" size="16.0" />
+      </font>
+      <styleClass>
+         <String fx:value="border" />
+         <String fx:value="img" />
+      </styleClass>
+   </TextField>
+</AnchorPane>

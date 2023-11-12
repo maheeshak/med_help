@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1530.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.factory_management_system_te.controller.MainWindowFormController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="33.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image>
+      </ImageView>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" focusTraversable="false" graphicTextGap="10.0" layoutX="22.0" layoutY="203.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#btnDashboardOnAction" prefHeight="54.0" prefWidth="244.0" text="DASHBOARD" textFill="#072c5f">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/dashboard_logo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" focusTraversable="false" graphicTextGap="10.0" layoutX="21.0" layoutY="272.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#btnDistributorOnAction" prefHeight="54.0" prefWidth="244.0" stylesheets="@../style/color.css" text="CUSTOMER" textFill="#072c5f">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/distributor_logo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" focusTraversable="false" graphicTextGap="10.0" layoutX="28.0" layoutY="339.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#btnOrderOnAction" prefHeight="54.0" prefWidth="236.0" stylesheets="@../style/color.css" text="ORDER" textFill="#072c5f">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/order_logo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" focusTraversable="false" graphicTextGap="10.0" layoutX="28.0" layoutY="406.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#btnSupplierOnAction" prefHeight="54.0" prefWidth="236.0" stylesheets="@../style/color.css" text="SUPLIER" textFill="#072c5f">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/supplier_logo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" focusTraversable="false" graphicTextGap="10.0" layoutX="28.0" layoutY="472.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#btnEmployeeOnAction" prefHeight="54.0" prefWidth="236.0" stylesheets="@../style/color.css" text="EMPLOYEE" textFill="#072c5f">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/employee_logo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" focusTraversable="false" graphicTextGap="10.0" layoutX="28.0" layoutY="539.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#btnStockOnAction" prefHeight="54.0" prefWidth="236.0" stylesheets="@../style/color.css" text="STOCK" textFill="#072c5f">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/stock_logo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" focusTraversable="false" graphicTextGap="10.0" layoutX="28.0" layoutY="603.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#btnReportOnAction" prefHeight="54.0" prefWidth="236.0" stylesheets="@../style/color.css" text="REPORTS" textFill="#072c5f">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/report_logo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <AnchorPane fx:id="pane" layoutX="265.0" prefHeight="800.0" prefWidth="1265.0" style="-fx-background-color: #f2f2f2;" stylesheets="@../style/color.css">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#00000080" height="20.0" radius="9.5" width="20.0" />
+         </effect></AnchorPane>
+      <JFXButton focusTraversable="false" layoutX="52.0" layoutY="733.0" onAction="#btnLogOutOnAction" text="LOGOUT" textFill="#072c5f">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logOut.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.factory_management_system_te.controller.ItemPreviewWindowController">
+   <children>
+      <Label layoutX="60.0" layoutY="14.0" text="ITEM">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtID" editable="false" focusTraversable="false" layoutX="63.0" layoutY="83.0" prefHeight="25.0" prefWidth="188.0" />
+      <TextField fx:id="txtItemNAme" editable="false" focusTraversable="false" layoutX="65.0" layoutY="152.0" prefHeight="31.0" prefWidth="557.0" />
+      <Label layoutX="65.0" layoutY="63.0" text="Item ID">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="132.0" text="Item Name">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="344.0" layoutY="63.0" text="Item Type">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQty" editable="false" focusTraversable="false" layoutX="65.0" layoutY="220.0" prefHeight="31.0" prefWidth="242.0" />
+      <Label layoutX="65.0" layoutY="200.0" text="Qty">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUnitPrice" editable="false" focusTraversable="false" layoutX="346.0" layoutY="220.0" prefHeight="31.0" prefWidth="276.0" />
+      <Label layoutX="346.0" layoutY="200.0" text="Unit Price">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Pane layoutY="-2.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="35.0" stylesheets="@../style/color.css">
+         <styleClass>
+            <String fx:value="pane" />
+            <String fx:value="pane_blue" />
+         </styleClass>
+      </Pane>
+      <TableView fx:id="tblRawDetails" focusTraversable="false" layoutX="43.0" layoutY="270.0" prefHeight="279.0" prefWidth="588.0">
+         <columns>
+            <TableColumn fx:id="colRawID" editable="false" prefWidth="157.0" text="Raw_ID" />
+            <TableColumn fx:id="colDescription" editable="false" prefWidth="324.0" text="Description" />
+            <TableColumn fx:id="colQty" editable="false" prefWidth="96.0" text="Qty" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtItemType" editable="false" focusTraversable="false" layoutX="337.0" layoutY="83.0" prefHeight="31.0" prefWidth="276.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="453.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.factory_management_system_te.controller.OrderPreviewWindowFormController">
+   <children>
+      <Label layoutX="235.0" prefHeight="42.0" prefWidth="330.0" text="Order Details Form" textFill="#5e5c5c">
+         <font>
+            <Font name="Times New Roman Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="62.0" text="Order Id:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOrderId" layoutX="182.0" layoutY="61.0" textFill="#278d7f">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="485.0" layoutY="62.0" text="Order date:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOrderDate" layoutX="605.0" layoutY="61.0" textFill="#278d7f">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="122.0" text="Customer Id:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="443.0" layoutY="119.0" text="Customer Name:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCustomerName" layoutX="606.0" layoutY="118.0" textFill="#278d7f">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblOrderCart" layoutX="78.0" layoutY="186.0" prefHeight="200.0" prefWidth="747.0">
+         <columns>
+            <TableColumn fx:id="colItemCode" prefWidth="75.0" text="Item_ID" />
+            <TableColumn fx:id="colDescription" prefWidth="278.0" text="Description" />
+            <TableColumn fx:id="colQty" prefWidth="92.0" text="Qty" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="164.0" text="Unit Price" />
+            <TableColumn fx:id="colTotal" prefWidth="137.0" text="Total" />
+         </columns>
+      </TableView>
+      <Label fx:id="lblNetTotal" layoutX="185.0" layoutY="411.0" textFill="#b51313">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="415.0" text="Net Total:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Pane layoutY="-6.0" prefHeight="460.0" prefWidth="45.0" stylesheets="@../style/color.css">
+         <styleClass>
+            <String fx:value="pane" />
+            <String fx:value="pane_blue" />
+         </styleClass>
+      </Pane>
+      <Label layoutX="415.0" layoutY="413.0" text="Delivery Type: ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCustId" layoutX="197.0" layoutY="120.0" prefHeight="26.0" prefWidth="183.0" textFill="#278d7f">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDelType" layoutX="525.0" layoutY="411.0" prefHeight="26.0" prefWidth="183.0" textFill="#278d7f">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

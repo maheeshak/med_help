@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="800.0" prefWidth="1265.0" style="-fx-background-color: transparent;" stylesheets="@../style/color.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.factory_management_system_te.controller.StockWindowFormController">
+   <children>
+      <Label layoutX="83.0" layoutY="28.0" text="STOCK" textFill="#072c5f">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="45.0" fitWidth="55.0" layoutX="26.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/supplier_logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="45.0" layoutX="187.0" layoutY="28.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/beat_logo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="6.0" layoutY="121.0" prefHeight="326.0" prefWidth="1236.0" style="-fx-background-color: white; -fx-background-radius: 30px;">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#00000080" height="20.0" radius="9.5" width="20.0" />
+         </effect>
+         <children>
+            <Pane layoutX="983.0" layoutY="10.0" prefHeight="30.0" prefWidth="237.0" style="-fx-background-color: white; -fx-background-radius: 30px;">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" color="#00000080" height="20.0" radius="9.5" width="20.0" />
+               </effect>
+               <children>
+                  <JFXTextField fx:id="txtItemSearch" focusTraversable="false" layoutX="52.0" layoutY="3.0" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#txtItemSearchOnKeyPressed" prefHeight="20.0" prefWidth="177.0" promptText="Search" unFocusColor="#072c5f">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="15.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/distributor_search.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <TableView fx:id="tblItem" focusTraversable="false" layoutX="14.0" layoutY="61.0" prefHeight="229.0" prefWidth="1210.0" stylesheets="@../style/tableCustomer.css">
+               <columns>
+                  <TableColumn fx:id="colItemId" prefWidth="214.00001525878906" text="Item_ID" />
+                  <TableColumn fx:id="colItemName" prefWidth="354.0" text="Item Name" />
+                  <TableColumn fx:id="colItemType" prefWidth="215.0" text="Item_type" />
+                  <TableColumn fx:id="colUnitPrice" prefWidth="155.0" text="Unit_price" />
+                  <TableColumn fx:id="colQty" prefWidth="182.0" text="Qty" />
+                  <TableColumn prefWidth="33.0" text="Action">
+                     <columns>
+                        <TableColumn fx:id="colPreview" prefWidth="35.0" />
+                        <TableColumn fx:id="colRemove" prefWidth="35.0" />
+                     </columns></TableColumn>
+               </columns>
+            </TableView>
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="32.0" layoutY="12.0" onAction="#btnItemNewOnAction" prefHeight="34.0" prefWidth="104.0" style="-fx-background-color: lightgreen; -fx-background-radius: 10px;" text="+ New">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="539.0" layoutY="16.0" text="ITEMS SUMMARY" textFill="#072c5f">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="29.0" fitWidth="45.0" layoutX="471.0" layoutY="11.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/beat_logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="45.0" layoutX="705.0" layoutY="12.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/beat_logo.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="148.0" layoutY="12.0" onAction="#btnUpdateItemOnAction" prefHeight="34.0" prefWidth="104.0" style="-fx-background-color: yellow; -fx-background-radius: 10px;" text="Update">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="677.0" layoutY="31.0" prefHeight="68.0" prefWidth="256.0" style="-fx-background-color: white; -fx-background-radius: 30px;">
+         <effect>
+            <DropShadow color="#00000080" height="20.0" radius="9.5" width="20.0" />
+         </effect>
+         <children>
+            <Label layoutX="84.0" layoutY="4.0" text="Total Items" textFill="#072c5f">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalItems" layoutX="101.0" layoutY="28.0" prefHeight="30.0" prefWidth="78.0" text="00" textFill="#072c5f">
+               <font>
+                  <Font name="Times New Roman Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="6.0" layoutY="458.0" prefHeight="326.0" prefWidth="1236.0" style="-fx-background-color: white; -fx-background-radius: 30px;">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#00000080" height="20.0" radius="9.5" width="20.0" />
+         </effect>
+         <children>
+            <Pane layoutX="983.0" layoutY="10.0" prefHeight="30.0" prefWidth="237.0" style="-fx-background-color: white; -fx-background-radius: 30px;">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" color="#00000080" height="20.0" radius="9.5" width="20.0" />
+               </effect>
+               <children>
+                  <JFXTextField fx:id="txtRawSearch" focusTraversable="false" layoutX="52.0" layoutY="3.0" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#txtRawSearchOnKeyPressed" prefHeight="20.0" prefWidth="177.0" promptText="Search" unFocusColor="#072c5f">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="15.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/distributor_search.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <TableView fx:id="tblRawMaterial" focusTraversable="false" layoutX="14.0" layoutY="61.0" prefHeight="229.0" prefWidth="1210.0" stylesheets="@../style/tableSupplier.css">
+               <columns>
+                  <TableColumn fx:id="colRawId" prefWidth="209.0" text="Raw_ID" />
+                  <TableColumn fx:id="colDes" prefWidth="562.0" text="Description" />
+                  <TableColumn fx:id="colRawUnitPrice" prefWidth="199.0" text="Unit_Price" />
+                  <TableColumn fx:id="colRawQty" prefWidth="151.0" text="Qty" />
+                  <TableColumn prefWidth="34.0" text="Action">
+                     <columns>
+                        <TableColumn fx:id="colRawPreview" prefWidth="35.0" />
+                        <TableColumn fx:id="colRawRemove" prefWidth="35.0" />
+                     </columns></TableColumn>
+               </columns>
+            </TableView>
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="32.0" layoutY="12.0" onAction="#btnMaterialNewOnAction" prefHeight="34.0" prefWidth="104.0" style="-fx-background-color: lightgreen; -fx-background-radius: 10px;" text="+ New">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="491.0" layoutY="15.0" text="RAW MATERIALS SUMMARY" textFill="#072c5f">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="29.0" fitWidth="45.0" layoutX="431.0" layoutY="11.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/beat_logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="45.0" layoutX="754.0" layoutY="11.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/beat_logo.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="153.0" layoutY="12.0" onAction="#btnUpdateMaterialOnAction" prefHeight="34.0" prefWidth="104.0" style="-fx-background-color: yellow; -fx-background-radius: 10px;" text="Update">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="952.0" layoutY="28.0" prefHeight="68.0" prefWidth="256.0" style="-fx-background-color: white; -fx-background-radius: 30px;">
+         <effect>
+            <DropShadow color="#00000080" height="20.0" radius="9.5" width="20.0" />
+         </effect>
+         <children>
+            <Label layoutX="49.0" layoutY="4.0" text="Total Raw Materials" textFill="#072c5f">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalRaw" layoutX="113.0" layoutY="28.0" prefHeight="30.0" prefWidth="78.0" text="00" textFill="#072c5f">
+               <font>
+                  <Font name="Times New Roman Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

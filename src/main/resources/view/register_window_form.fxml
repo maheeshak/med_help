@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" stylesheets="@../style/color.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.factory_management_system_te.controller.RegisterWindowFormController">
+   <children>
+      <ImageView fitHeight="89.0" fitWidth="217.0" layoutX="37.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="50.0" layoutY="168.0" prefHeight="44.0" prefWidth="109.0" text="Sign up" textFill="#000000b1">
+         <font>
+            <Font name="Times New Roman Bold" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserID" focusTraversable="false" layoutX="47.0" layoutY="230.0" onKeyTyped="#txtUserNameOnKeyTyped" prefHeight="31.0" prefWidth="253.0" promptText="UserID" style="-fx-background-radius: 30px;" stylesheets="@../style/color.css">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="border" />
+            <String fx:value="img" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="txtUserName" focusTraversable="false" layoutX="47.0" layoutY="280.0" onKeyTyped="#txtOtpOnKeyTyped" prefHeight="33.0" prefWidth="253.0" promptText="Username" style="-fx-background-radius: 30;">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="border" />
+            <String fx:value="img" />
+         </styleClass>
+      </TextField>
+      <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="125.0" layoutY="386.0" onAction="#btnRegisterOnAction" prefHeight="31.0" prefWidth="109.0" style="-fx-background-radius: 30;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <stylesheets>
+            <URL value="@../style/color.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="div" />
+            <String fx:value="btnRegister" />
+         </styleClass>
+      </JFXButton>
+      <ImageView fx:id="imgLogo" fitHeight="506.0" fitWidth="314.0" layoutX="290.0" layoutY="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/shape2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="61.0" layoutY="446.0" text="Do you have an account ? ">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtSignIn" layoutX="227.0" layoutY="446.0" onMouseClicked="#txtSigInOnMouseClick" text="Sign in" textFill="RED">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <PasswordField fx:id="txtPassword" focusTraversable="false" layoutX="47.0" layoutY="326.0" onKeyTyped="#txtPasswordOnKeyTyped" prefHeight="31.0" prefWidth="253.0" promptText="Password" style="-fx-background-radius: 30px;">
+         <styleClass>
+            <String fx:value="border" />
+            <String fx:value="img" />
+         </styleClass>
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

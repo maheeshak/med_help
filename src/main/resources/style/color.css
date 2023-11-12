@@ -1,0 +1,18 @@
+.div {
+    -fx-background-color: linear-gradient(to bottom, #00b1cc 0%, #0c4a9e 100%);
+}
+.img {
+    -fx-border-radius: 30px 30px 30px 30px;
+}
+
+.border{
+    -fx-border-color:linear-gradient(to bottom, #00b1cc 0%, #0c4a9e 100%) ;
+}
+
+.pane {
+   -fx-background-color: linear-gradient(to top left, #ccffff 0%, #ffffff 100%);
+}
+ .pane_blue {
+   -fx-background-color: linear-gradient(to top, #66ffcc 0%, #99ccff 100%);
+}
+

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.factory_management_system_te.controller.AddEmployeeWindowFormController">
+   <children>
+      <Label layoutX="69.0" layoutY="14.0" text="Employee Profile">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmpId" layoutX="72.0" layoutY="83.0" onAction="#txtEmpIdOnAction" prefHeight="25.0" prefWidth="188.0" />
+      <TextField fx:id="txtName" focusTraversable="false" layoutX="292.0" layoutY="82.0" onAction="#txtNameOnAction" prefHeight="31.0" prefWidth="342.0" />
+      <TextField fx:id="txtNic" focusTraversable="false" layoutX="72.0" layoutY="140.0" onAction="#txtNicOnAction" prefHeight="25.0" prefWidth="188.0" />
+      <TextField fx:id="txtAddress" focusTraversable="false" layoutX="292.0" layoutY="140.0" onAction="#txtAddressOnAction" prefHeight="31.0" prefWidth="342.0" />
+      <TextField fx:id="txtAge" focusTraversable="false" layoutX="72.0" layoutY="192.0" onAction="#txtAgeOnAction" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="txtMobile" focusTraversable="false" layoutX="72.0" layoutY="303.0" onAction="#txtMobileOnAction" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="txtSalary" focusTraversable="false" layoutX="472.0" layoutY="307.0" onAction="#txtSalaryOnAction" prefHeight="25.0" prefWidth="164.0" />
+      <TextArea fx:id="txtSclAtt" focusTraversable="false" layoutX="72.0" layoutY="377.0" prefHeight="37.0" prefWidth="568.0" />
+      <TextArea fx:id="txtEduQul" focusTraversable="false" layoutX="72.0" layoutY="447.0" prefHeight="37.0" prefWidth="568.0" />
+      <Label layoutX="74.0" layoutY="63.0" text="Employee ID">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="292.0" layoutY="62.0" text="Name">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="126.0" text="NIC">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="292.0" layoutY="126.0" text="Adress">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="177.0" text="Age">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="177.0" text="DOB">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="472.0" layoutY="177.0" text="Gender">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="286.0" text="Mobile">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="287.0" text="Designtion">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="472.0" layoutY="289.0" text="Current Salary">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="357.0" text="School Attendance">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="431.0" text="Educational Qualifications">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNationality" focusTraversable="false" layoutX="278.0" layoutY="247.0" onAction="#txtNationalityOnAction" prefHeight="25.0" prefWidth="164.0" />
+      <TextField fx:id="txtStatus" focusTraversable="false" layoutX="72.0" layoutY="247.0" onAction="#txtStatusOnAction" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="txtReligion" focusTraversable="false" layoutX="472.0" layoutY="247.0" onAction="#txtReligionOnAction" prefHeight="25.0" prefWidth="164.0" />
+      <Label layoutX="72.0" layoutY="232.0" text="Civil Status">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="232.0" text="Nationality">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="472.0" layoutY="232.0" text="Religion">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="582.0" layoutY="576.0" onAction="#btnSaveOnAction" prefHeight="26.0" prefWidth="58.0" style="-fx-background-color: LightGreen;" text="Save">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Pane layoutY="1.0" prefHeight="624.0" prefWidth="45.0" stylesheets="@../style/color.css">
+         <styleClass>
+            <String fx:value="pane" />
+            <String fx:value="pane_blue" />
+         </styleClass>
+      </Pane>
+      <TextArea fx:id="txtWorkExp" focusTraversable="false" layoutX="72.0" layoutY="518.0" prefHeight="37.0" prefWidth="568.0" />
+      <Label layoutX="72.0" layoutY="502.0" text="working Expereince">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbGender" layoutX="472.0" layoutY="194.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#cmbGenderOnAction" prefHeight="25.0" prefWidth="164.0" />
+      <ComboBox fx:id="cmbDesignation" layoutX="274.0" layoutY="304.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#cmbDesignationOnAction" prefHeight="25.0" prefWidth="164.0" />
+      <DatePicker fx:id="txtDob" layoutX="279.0" layoutY="191.0" prefHeight="31.0" prefWidth="164.0" />
+      <Label fx:id="lblCurrentEmployeeID" layoutX="230.0" layoutY="61.0" textFill="#ff0505">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+.table-view .column-header .label{
+    -fx-text-fill: black;
+    -fx-font-family: "Times New Roman";
+    -fx-alignment: CENTER;
+    -fx-font-size: 16;
+}
+.table-row-cell:odd{
+    -fx-background-color: #f9e6ff;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+
+}
+
+.table-row-cell{
+    -fx-font-size: 14;
+    -fx-font-family: "Times New Roman";
+    -fx-font-weight: bold;
+
+}
+.table-row-cell:selected{
+    -fx-background-color: #f2f2f2;
+
+}

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="800.0" prefWidth="1265.0" style="-fx-background-color: transparent;" stylesheets="@../style/color.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.factory_management_system_te.controller.ReportWindowFormController">
+   <children>
+      <Label layoutX="83.0" layoutY="28.0" text="REPORT" textFill="#072c5f">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="45.0" fitWidth="55.0" layoutX="26.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/report_logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="45.0" layoutX="202.0" layoutY="28.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/beat_logo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="172.0" layoutY="134.0" prefHeight="188.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 30px;">
+         <effect>
+            <DropShadow color="#00000080" height="20.0" radius="9.5" width="20.0" />
+         </effect>
+         <children>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" focusTraversable="false" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnEmployeeOnAction" prefHeight="188.0" prefWidth="200.0" text="Employee Report">
+               <font>
+                  <Font name="Times New Roman Bold" size="21.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/employee_logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="533.0" layoutY="134.0" prefHeight="188.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 30px;">
+         <effect>
+            <DropShadow color="#00000080" height="20.0" radius="9.5" width="20.0" />
+         </effect>
+         <children>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" focusTraversable="false" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnCustomerOnAction" prefHeight="188.0" prefWidth="200.0" text="Customer Report">
+               <font>
+                  <Font name="Times New Roman Bold" size="21.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/distributor_logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="885.0" layoutY="134.0" prefHeight="188.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 30px;">
+         <effect>
+            <DropShadow color="#00000080" height="20.0" radius="9.5" width="20.0" />
+         </effect>
+         <children>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" focusTraversable="false" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnSupplierOnAction" prefHeight="188.0" prefWidth="200.0" text="Supplier Report">
+               <font>
+                  <Font name="Times New Roman Bold" size="21.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="145.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/supplier_logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="172.0" layoutY="409.0" prefHeight="188.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 30px;">
+         <effect>
+            <DropShadow color="#00000080" height="20.0" radius="9.5" width="20.0" />
+         </effect>
+         <children>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" focusTraversable="false" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnItemOnAction" prefHeight="188.0" prefWidth="200.0" text="Item Report">
+               <font>
+                  <Font name="Times New Roman Bold" size="21.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/stock_logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="533.0" layoutY="409.0" prefHeight="188.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 30px;">
+         <effect>
+            <DropShadow color="#00000080" height="20.0" radius="9.5" width="20.0" />
+         </effect>
+         <children>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" focusTraversable="false" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnRawOnAction" prefHeight="188.0" prefWidth="200.0" text="Material Report">
+               <font>
+                  <Font name="Times New Roman Bold" size="21.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/raw.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="885.0" layoutY="409.0" prefHeight="188.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 30px;">
+         <effect>
+            <DropShadow color="#00000080" height="20.0" radius="9.5" width="20.0" />
+         </effect>
+         <children>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" focusTraversable="false" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnOrderOnAction" prefHeight="188.0" prefWidth="200.0" text="Order Report">
+               <font>
+                  <Font name="Times New Roman Bold" size="21.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/order_logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
